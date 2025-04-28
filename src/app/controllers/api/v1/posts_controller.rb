@@ -1,6 +1,7 @@
 module Api
   module V1
     class PostsController < ApplicationController
+      before_action :authorize_request, except: [:index, :show]
       before_action :set_post, only: [:show, :update, :destroy]
 
       def index
