@@ -1,7 +1,11 @@
-class FollowsController < ApplicationController
-  def create
-  end
+module Api
+  module V1
+    class FollowsController < ApplicationController
+      def create
+      end
 
-  def destroy
+      def destroy
+      end
+    end
   end
 end
